@@ -1,13 +1,23 @@
-name: attendenace
+name: attendance
 
-'on': push
+on: push
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout code
-          uses: actions/checkout@v3
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-        - name: build with make
-          run: make build
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry pylint
+
+      - name: Build with Make
+        run: make build
