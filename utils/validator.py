@@ -1,6 +1,7 @@
 """
 Module for all helping functions like query and data validation
 """
+# pylint: disable=R0801
 
 from functools import wraps
 from flask import jsonify, request

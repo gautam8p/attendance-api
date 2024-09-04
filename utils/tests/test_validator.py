@@ -1,3 +1,4 @@
+# pylint: disable=R0801
 from functools import wraps
 from flask import jsonify, request
 from voluptuous import Schema, Invalid

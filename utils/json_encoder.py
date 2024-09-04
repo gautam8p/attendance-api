@@ -1,6 +1,7 @@
 """
 Module for Encoding and Decoding of JSON data
 """
+# pylint: disable=R0801
 
 from enum import Enum
 from datetime import datetime

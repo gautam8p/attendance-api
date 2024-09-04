@@ -1,6 +1,8 @@
 """
 Module for custom json log model in flask and gunicorn
 """
+# pylint: disable=R0801
+
 from pythonjsonlogger import jsonlogger
 
 # pylint: disable=super-with-arguments

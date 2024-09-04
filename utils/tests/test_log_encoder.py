@@ -1,3 +1,4 @@
+# pylint: disable=R0801
 from pythonjsonlogger import jsonlogger
 import logging
 import pytest

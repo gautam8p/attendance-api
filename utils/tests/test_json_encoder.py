@@ -1,3 +1,5 @@
+# pylint: disable=R0801
+
 from enum import Enum
 from datetime import datetime
 from dataclasses import dataclass, asdict, is_dataclass
@@ -5,6 +7,7 @@ from json import JSONEncoder
 from peewee import Model
 from playhouse.shortcuts import model_to_dict
 import pytest
+
 
 @dataclass
 class CustomDataClass:
