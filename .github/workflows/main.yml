@@ -4,7 +4,7 @@ name: attendenace
 
 jobs:
     build:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latests
         steps:
         - name: Checkout code
           uses: actions/checkout@v3
