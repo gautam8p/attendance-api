@@ -1,1 +1,14 @@
 name: attendenace
+
+'on': push
+
+jobs:
+    build:
+        runs-on: ubuntu-release
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: build with make
+          run: make build
